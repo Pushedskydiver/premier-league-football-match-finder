@@ -1,20 +1,32 @@
 {
   "name": "premier-league-football",
   "version": "0.1.0",
+  "description": "Find the latest standings, live and future fixtures of the 2019-2020 premier league.",
   "private": true,
+  "author": {
+    "name": "Alex Clapperton",
+    "email": "hi@alexclapperton.co.uk",
+    "url": "https://alexclapperton.co.uk"
+  },
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.0"
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "eslint-config-synacor": "^3.0.4",
+    "eslint-plugin-react": "^7.14.3"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
