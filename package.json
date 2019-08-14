@@ -1,5 +1,5 @@
 {
-  "name": "premier-league-football",
+  "name": "premier-league-football-match-finder",
   "version": "0.1.0",
   "description": "Find the latest standings, live and future fixtures of the 2019-2020 premier league.",
   "private": true,

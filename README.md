@@ -1,4 +1,4 @@
-# Premier League Match Finder
+# Premier League Football Match Finder
 
 ## CLI Commands
 
