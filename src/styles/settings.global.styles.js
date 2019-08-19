@@ -1,7 +1,6 @@
-import { css, createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { colors } from './settings.colors.styles';
 import { typography } from './settings.typography.styles';
-import { maxWidth } from './settings.breakpoints.styles';
 import spacing from './settings.spacing.styles';
 
 const GlobalStyles = createGlobalStyle`
@@ -20,12 +19,6 @@ const GlobalStyles = createGlobalStyle`
     font-weight: normal;
   }
 
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
-
   html {
     font-size: 16px;
     -ms-text-size-adjust: 100%;
@@ -34,16 +27,14 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: var(--font);
     font-variation-settings: 'wght' ${typography.weight.regular};
     line-height: ${typography.lineHeight.body};
     transition: background-color 0.3s ease-in-out;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-
-    ${maxWidth('992', () => css`
-      display: none;
-    `)}
   }
 
   body ::-moz-selection {
@@ -56,49 +47,11 @@ const GlobalStyles = createGlobalStyle`
     color: var(--background);
   }
 
-  input[type="color"]::-webkit-color-swatch-wrapper {
-    padding: 0;
-  }
-
-  input[type="color"]::-webkit-color-swatch {
-    border: none;
-    opacity: 0;
-  }
-
   h1,
   h2,
   p {
     margin-top: 0;
     margin-bottom: ${spacing.margin}px;
-  }
-
-  main {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding-top: ${spacing.padding * 3}px;
-    padding-bottom: ${spacing.padding * 3}px;
-    background-color: var(--background);
-    color: var(--foreground);
-    box-shadow: 0 2px 12px 15px rgba(0, 0, 0, 0.075);
-    transition: background-color 0.3s ease-in-out 0s;
-  }
-
-  button {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    font-family: inherit;
-    cursor: pointer;
-    appearance: none;
-  }
-
-  input,
-  select {
-    font-family: inherit;
-    appearance: none;
   }
 `;
 

@@ -3,7 +3,7 @@ import spacing from './settings.spacing.styles';
 
 export const Wrapper = styled.section`
   position: relative;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
