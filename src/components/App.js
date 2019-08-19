@@ -33,7 +33,7 @@ function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      {standings.map((team, key) => renderTeam(team, key))}
+      {standings.map(renderTeam)}
     </Fragment>
   );
 }
