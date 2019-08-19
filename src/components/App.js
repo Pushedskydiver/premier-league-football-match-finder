@@ -1,4 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import Header from './02-Molecules/Header/Header';
+import { SectionContainer } from '../styles/generic.container.styles';
 import GlobalStyles from '../styles/settings.global.styles';
 import { fetchData } from './Utils';
 
@@ -33,7 +35,10 @@ function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      {standings.map(renderTeam)}
+      <Header />
+      <SectionContainer>
+        {standings.map(renderTeam)}
+      </SectionContainer>
     </Fragment>
   );
 }
