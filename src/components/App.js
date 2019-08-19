@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
+import GlobalStyles from '../styles/settings.global.styles';
 import { fetchData } from './Utils';
 
 const api = 'https://api-football-v1.p.rapidapi.com/v2/';
@@ -30,9 +31,10 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <Fragment>
+      <GlobalStyles />
       {standings.map((team, key) => renderTeam(team, key))}
-    </div>
+    </Fragment>
   );
 }
 

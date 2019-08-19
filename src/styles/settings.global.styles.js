@@ -5,7 +5,7 @@ import spacing from './settings.spacing.styles';
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --background: ${colors.core};
+    --background: ${colors.light};
     --foreground: ${colors.dark};
     --font: ${typography.family};
     --copy: inherit;
