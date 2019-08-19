@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Header from './02-Molecules/Header/Header';
-import { SectionContainer } from '../styles/generic.container.styles';
 import GlobalStyles from '../styles/settings.global.styles';
+import { SectionContainer } from '../styles/generic.container.styles';
 import { fetchData } from './Utils';
 
 const api = 'https://api-football-v1.p.rapidapi.com/v2/';

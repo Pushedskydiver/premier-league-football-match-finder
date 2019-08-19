@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { colors } from './settings.colors.styles';
-import { typography } from './settings.typography.styles';
+import typography from './settings.typography.styles';
 import spacing from './settings.spacing.styles';
 
 const GlobalStyles = createGlobalStyle`

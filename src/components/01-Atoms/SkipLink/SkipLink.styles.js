@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { typography } from '../../../styles/settings.typography.styles';
+import typography from '../../../styles/settings.typography.styles';
 import spacing from '../../../styles/settings.spacing.styles';
 
 const SkipLink = styled.a`

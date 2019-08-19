@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { typography } from '../../../styles/settings.typography.styles';
+import typography from '../../../styles/settings.typography.styles';
 import spacing from '../../../styles/settings.spacing.styles';
 
 export const Heading1 = styled.h1`
@@ -39,6 +39,10 @@ export const Heading1 = styled.h1`
 
   ${props => props.xl && css`
     font-size: ${typography.heading.size.xl};
+  `}
+
+  ${props => props.wght && css`
+    font-variation-settings: 'wght' ${props.wght}
   `}
 `;
 

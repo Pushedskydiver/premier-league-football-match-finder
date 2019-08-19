@@ -2,7 +2,7 @@ function calcFontSize(number) {
   return `${number / 16}em`;
 }
 
-export const typography = {
+const typography = {
   family: 'Avenir Next, sans-serif',
   lineHeight: {
     heading: 1.3,
@@ -37,3 +37,5 @@ export const typography = {
     thick: '700'
   }
 };
+
+export default typography;
