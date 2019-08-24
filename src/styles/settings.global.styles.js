@@ -59,12 +59,6 @@ const GlobalStyles = createGlobalStyle`
     margin-top: 0;
     margin-bottom: ${spacing.margin}px;
   }
-
-  thead,
-  tbody,
-  tr {
-    display: contents;
-  }
 `;
 
 export default GlobalStyles;
