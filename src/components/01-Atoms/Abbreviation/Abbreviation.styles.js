@@ -8,6 +8,10 @@ text-decoration: none;
     &::before {
       content: attr(title);
     }
+
+    span {
+      display: none;
+    }
   `)}
 `;
 

@@ -11,5 +11,8 @@ export function rgba(hex, opacity) {
 export const colors = {
   core: '#5efc8d',
   light: '#ffffff',
-  dark: '#000000'
+  dark: '#000000',
+  neutral: '#a7a2a9',
+  pale: '#f4f7f5',
+  danger: '#fe938c'
 };

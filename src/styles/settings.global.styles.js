@@ -8,7 +8,6 @@ const GlobalStyles = createGlobalStyle`
     --background: ${colors.light};
     --foreground: ${colors.dark};
     --font: ${typography.family};
-    --copy: inherit;
   }
 
   *,
