@@ -4,17 +4,19 @@ import { Heading1 } from '../../01-Atoms/Heading/Heading.styles';
 import HeaderStyles from './Header.styles';
 import { Container } from '../../../styles/generic.container.styles';
 import typography from '../../../styles/settings.typography.styles';
-import Context from "../../Context";
+import Context from '../../Context';
 
 
 const Header = () => {
-  const { mans } = React.useContext(Context);
+  const { title } = React.useContext(Context);
 
- return( <HeaderStyles>
-    <Container>
-      <Heading1 regular noMargin wght={typography.weight.medium}>Premier League Match Finder {mans}</Heading1>
-    </Container>
-  </HeaderStyles>)
+  return (
+    <HeaderStyles>
+      <Container>
+        <Heading1 regular noMargin wght={typography.weight.medium}>{title}</Heading1>
+      </Container>
+    </HeaderStyles>
+  );
 };
 
 export default memo(Header);
