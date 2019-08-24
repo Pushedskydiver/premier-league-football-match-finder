@@ -1,10 +1,11 @@
-import React, { memo } from 'react';
+import React, { memo, useContext } from 'react';
 import { TableStyles, THeader, TRow, TData } from './Table.styles';
+import Context from '../../Context';
 import Abbr from '../../01-Atoms/Abbreviation/Abbreviation.styles';
 import Form from '../../01-Atoms/Form/Form.styles';
 
-function Table(props) {
-  const { standings } = props;
+function Table() {
+  const { standings } = useContext(Context);
 
   const renderFrom = (form, key) => {
     if (key === 4) {
