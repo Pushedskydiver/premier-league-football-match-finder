@@ -4,6 +4,9 @@
     "node": true,
     "es6": true
   },
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
     "brace-style": "off",
     "indent": [
@@ -11,7 +14,9 @@
       2
     ],
     "react/jsx-indent-props": "off",
-    "react/jsx-max-props-per-line": "off"
+    "react/jsx-max-props-per-line": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "globals": {
     "document": true,

@@ -19,6 +19,12 @@ const GlobalStyles = createGlobalStyle`
     font-weight: normal;
   }
 
+  ${'' /* @font-face {
+    font-family: 'Avenir Next';
+    src: url('./fonts/avenir-next-variable.woff2') format('woff2-variations'), url('./fonts/avenir-next-variable.woff2') format('woff2');
+    font-display: swap;
+  } */}
+
   html {
     font-size: 16px;
     -ms-text-size-adjust: 100%;
@@ -52,6 +58,12 @@ const GlobalStyles = createGlobalStyle`
   p {
     margin-top: 0;
     margin-bottom: ${spacing.margin}px;
+  }
+
+  thead,
+  tbody,
+  tr {
+    display: contents;
   }
 `;
 

@@ -9,7 +9,7 @@ export function rgba(hex, opacity) {
 }
 
 export const colors = {
-  core: '#ffe66d',
+  core: '#5efc8d',
   light: '#ffffff',
-  dark: '#222222'
+  dark: '#000000'
 };
